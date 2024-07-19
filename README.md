@@ -1,9 +1,8 @@
 ﻿# web_project
 
-
 **Student Name**: Gurpreet Kaur  
-**Student Number**: 8966925 
-**Date**: 19-July-2024
+**Student Number**: 8966925  
+**Date**: 19-July-2024  
 
 ## Technology Stack
 
@@ -31,16 +30,14 @@
 ## Database Schema Design
 
 ### Products Schema (MongoDB)
-
-name: String
-description: String
-price: Number
-category: String
-stock: Number
-imageUrl: String
-
+- name: String
+- description: String
+- price: Number
+- category: String
+- stock: Number
+- imageUrl: String
 
 ### Users Schema (MongoDB)
-username: String
-password: String
-email: String
+- username: String
+- password: String
+- email: String
