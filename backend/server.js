@@ -2,14 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const port = 5000;
-mongoose.connect('mongodb+srv://preet:preet123@cluster0.fggfliv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
+
+mongoose.connect('mongodb+srv://gurpreetkaur6925:RmtLOgC5Uk3IFj2W@cluster0.bkcbahj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
-  app.use(express.json());
 
-  app.get('/', (req, res) => res.send('API is running'));
-  
-  app.listen(port, () => console.log(`Server running on port ${port}`));
+app.use(express.json());
 
 const productRoutes = require('./routes/productRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
@@ -20,4 +19,3 @@ app.use('/api/categories', categoryRoutes);
 app.get('/', (req, res) => res.send('API is running'));
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
-
