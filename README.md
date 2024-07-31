@@ -14,23 +14,65 @@
 #### 1. Initialize your project. (/2)
 - Repository created on [GitHub](https://github.com/preet0511/web_project) and cloned to local machine.
 - Initialized a new project using `npm init` for both frontend and backend.
+#### Backend Initialization
+1. **Create Backend Directory and Initialize Project**
+    mkdir backend
+    cd backend
+    npm init -y
+    npm install express mongoose
+
+2. **Create Basic Express Server**
+    - Create a file `server.js` in `backend` directory:
 
 ## Repository Link
 - https://github.com/preet0511/web_project
 
-### Frontend Setup
+#### Frontend Initialization
+1. **Create Frontend Directory and Initialize Project**
+    cd ..
+    npx create-react-app frontend
 
-- Initialized ReactJS project.
-- Basic structure set up for React components, including directories for components and services.
-- State management planned to handle user sessions and cart data.
+2. **Install React Router**
+    cd frontend
+    npm install react-router-dom axios
 
-### Backend Setup
+### 2. Configure Your Database
 
-- Initialized Node.js project with Express.
-- Connected to MongoDB (Atlas).
+#### Define MongoDB Schemas
 
-## Database Schema Design
-   
+**Create a `models` Directory in `backend` Directory.**
+
+1. **Create `Product.js` File in `models` Directory:**
+
+2. **Create `Category.js` File in `models` Directory:**
+
+#### Create Routes and Controllers
+
+**Create a `routes` Directory in the `backend` Directory.**
+
+1. **Create `productRoutes.js` File in `routes` Directory:**
+
+2. **Create `categoryRoutes.js` File in `routes` Directory:**
+
+3. **Update `server.js` to Include Routes:**
+
+### 3. Product Listings
+
+#### Display Products on the Frontend
+
+**Create Basic Components**
+
+1. **Create `components` Directory in `frontend/src`.**
+
+2. **Create `ProductList.js` File in `components` Directory:**
+
+3. **Create `CategoryList.js` File in `components` Directory:**
+
+4. **Create `ProductDetail.js` File in `components` Directory:**
+
+#### Set Up Routing
+
+**Update `App.js` to Include Routing:**
 ### Products Schema (MongoDB)
 - name: String
 - description: String
