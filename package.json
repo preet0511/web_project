@@ -1,0 +1,16 @@
+{
+  "name": "web_project",
+  "version": "1.0.0",
+  "description": "**Student Name**: Gurpreet Kaur  \r **Student Number**: 8966925  \r **Date**: 19-July-2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  }
+}

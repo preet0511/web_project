@@ -11,10 +11,12 @@
 - **Database**: MongoDB (Atlas)
 
 ## Project Setup
+#### 1. Initialize your project. (/2)
+- Repository created on [GitHub](https://github.com/preet0511/web_project) and cloned to local machine.
+- Initialized a new project using `npm init` for both frontend and backend.
 
-### Project Initialization
-
-- Repository created on GitHub and cloned to local machine.
+## Repository Link
+- https://github.com/preet0511/web_project
 
 ### Frontend Setup
 
@@ -28,7 +30,7 @@
 - Connected to MongoDB (Atlas).
 
 ## Database Schema Design
-
+   
 ### Products Schema (MongoDB)
 - name: String
 - description: String
@@ -41,3 +43,7 @@
 - username: String
 - password: String
 - email: String
+### Visual Representation of Schemas
+- https://github.com/preet0511/web_project/blob/main/schema_diagram.png
+## Repository Link
+- https://github.com/preet0511/web_project
