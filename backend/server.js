@@ -10,3 +10,14 @@ mongoose.connect('mongodb+srv://preet:preet123@cluster0.fggfliv.mongodb.net/?ret
   app.get('/', (req, res) => res.send('API is running'));
   
   app.listen(port, () => console.log(`Server running on port ${port}`));
+
+const productRoutes = require('./routes/productRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
+
+app.use('/api/products', productRoutes);
+app.use('/api/categories', categoryRoutes);
+
+app.get('/', (req, res) => res.send('API is running'));
+
+app.listen(port, () => console.log(`Server running on port ${port}`));
+
