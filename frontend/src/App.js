@@ -4,6 +4,8 @@ import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import CategoryList from './components/CategoryList';
 import Cart from './components/Cart';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
 const App = () => {
   return (

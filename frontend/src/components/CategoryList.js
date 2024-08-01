@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import '../styles.css'; // Updated import path
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([]);
@@ -13,9 +14,9 @@ const CategoryList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       {categories.map(category => (
-        <div key={category._id}>
+        <div key={category._id} className="product-card">
           <h2>{category.name}</h2>
           <p>{category.description}</p>
         </div>
