@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles.css'; // Updated import path
+import '../styles.css'; 
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([]);

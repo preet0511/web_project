@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
-import '../styles.css'; // Updated import path
+import '../styles.css'; 
 
 const ProductDetail = () => {
   const { id } = useParams();
