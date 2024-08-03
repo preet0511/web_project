@@ -4,7 +4,8 @@ import '../styles.css';
 import ProductListAdmin from './ProductListAdmin';
 import CreateProduct from './CreateProduct';
 import CategoryListAdmin from './CategoryListAdmin';
-import CreateCategory from './CreateCategory'; // Implement similarly
+import CreateCategory from './CreateCategory'; 
+import './adminDashboard.css';
 
 const AdminDashboard = () => {
   const [products, setProducts] = useState([]);
