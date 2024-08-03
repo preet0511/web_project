@@ -16,10 +16,14 @@ app.use(express.json());
 // Route Imports
 const productRoutes = require('./routes/productRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
+const adminProductRoutes = require('./routes/adminProductRoutes'); // Add this line
+const adminCategoryRoutes = require('./routes/adminCategoryRoutes'); // Add this line
 
 // Route Middleware
 app.use('/api/products', productRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/api/admin/products', adminProductRoutes); // Add this line
+app.use('/api/admin/categories', adminCategoryRoutes); // Add this line
 
 // Root Route
 app.get('/', (req, res) => res.send('API is running'));
